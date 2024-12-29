@@ -24,6 +24,10 @@ a{
     color: white;
 }
 
+.logo{
+    width: 10%;
+}
+
 .nav-main{
     font-size: calc(10px + 0.2vw);
     gap: 3%;
