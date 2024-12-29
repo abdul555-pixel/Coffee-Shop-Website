@@ -1,41 +1,31 @@
 @media (max-width: 660px) {
-    .hamburger{
+    .checkbtn{
         display: block;
-        margin: 20px 30px 20px 20px;
+        margin: 0px 30px 0px 0px;
     }
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-        transform: translateX(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateX(-8px) rotate(-45deg);
-    }
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-    }
+
     .logo{
         margin-left: 20px;
-        width: 20%;
     }
-    .left-nav, 
-    .right-nav {
+
+    .nav-main{
+        justify-content: space-between;
+    }
+    .navbar{
+        display: none;
+    }
+    .nav-menu {
         position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0px;
-        flex-direction: column;
-        background-color: #212529;
         width: 100%;
-        text-align: center;
-        transition: 0.3s ease;
-    }
-    .left-nav.active{
+        height: 100vh;
+        background-color: #212529;
+        top: -100%; /* Hidden by default */
         left: 0;
-    }
-    .right-nav.active{
-        left: 0;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        transition: top 0.3s ease-in-out;
+        z-index: 9; /* Ensure it's above other elements but below .checkbtn */
     }
 }
