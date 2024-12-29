@@ -1,0 +1,42 @@
+@media (max-width: 660px) {
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateX(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateX(-8px) rotate(-45deg);
+    }
+    .left-nav{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0px;
+        flex-direction: column;
+        background-color: #212529;
+        width: 100%;
+        text-align: center;
+        transition: 0.3 ease;
+    }
+    .right-nav{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0px;
+        flex-direction: column;
+        background-color: #212529;
+        width: 100%;
+        text-align: center;
+        transition: 0.3 ease;
+    }
+    .left-nav.active{
+        left: 0;
+    }
+    .right-nav.active{
+        left: 0;
+    }
+}

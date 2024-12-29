@@ -1,0 +1,82 @@
+body{
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Head */
+
+.background-image {
+    width: 100%; /* Adjust width as needed */
+    height: 100vh; /* Set the height to control the visible area */
+    background-image: url(assets/slide-1.jpg); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    padding-top: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #1a878f;
+    transition-duration: 0.5s;
+    transition-property: color;
+    transition-timing-function: ease;
+}
+
+.left-nav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    font-family: 'plus jakarta sans', sans-serif;
+    font-size: calc(10px + 0.2vw);
+    color: white;
+    font-weight: 500;
+}
+
+.right-nav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    font-family: 'plus jakarta sans', sans-serif;
+    font-size: calc(10px + 0.2vw);
+    color: white;
+    font-weight: 500;
+}
+
+.hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3 ease-in-out;
+    background-color: white;
+}
+
+.content {
+    position: relative; 
+    text-align: center;
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
