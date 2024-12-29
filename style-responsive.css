@@ -1,6 +1,7 @@
 @media (max-width: 660px) {
     .hamburger{
         display: block;
+        margin: 20px 30px 20px 20px;
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -11,18 +12,15 @@
     .hamburger.active .bar:nth-child(3){
         transform: translateX(-8px) rotate(-45deg);
     }
-    .left-nav{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0px;
-        flex-direction: column;
-        background-color: #212529;
-        width: 100%;
-        text-align: center;
-        transition: 0.3 ease;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
     }
-    .right-nav{
+    .logo{
+        margin-left: 20px;
+    }
+    .left-nav, 
+    .right-nav {
         position: fixed;
         left: -100%;
         top: 70px;
@@ -31,7 +29,7 @@
         background-color: #212529;
         width: 100%;
         text-align: center;
-        transition: 0.3 ease;
+        transition: 0.3s ease;
     }
     .left-nav.active{
         left: 0;

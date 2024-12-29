@@ -26,6 +26,11 @@ body{
     padding-top: 24px;
 }
 
+.logo{
+    width: 10%;
+    height: auto;
+}
+
 a{
     text-decoration: none;
     color: white;
