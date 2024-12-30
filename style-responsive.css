@@ -25,4 +25,12 @@
         height: 400px;
     }
 
+    .origin--story{
+        font-size: clamp(14px, calc(4px + 0.7vw), 50px);
+    }
+
+    .shop--description{
+        font-size: clamp(14px, calc(4px + 0.7vw), 50px);
+    }
+
 }
