@@ -34,4 +34,14 @@
         width: 60%;
     }
 
+    .offer-row--1,
+    .offer-row--2{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .offer--description{
+        width: 60%;
+    }
+
 }
