@@ -1,32 +1,28 @@
-@media (max-width: 660px) {
-    .checkbtn{
+@media (max-width: 800px) {
+    .hamburger{
         display: block;
-        margin: 0px 30px 0px 0px;
+        margin-right: 30px;
     }
 
     .logo{
-        margin-left: 20px;
-        width: 18%;
+        width: 20%;
+    }
+
+    .navbar{
+        display: none;
     }
 
     .nav-main{
         justify-content: space-between;
     }
-    .navbar{
-        display: none;
+
+    .origin--grid{
+        grid-template-columns: 1fr;
     }
-    .nav-menu {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #212529;
-        top: -100%; /* Hidden by default */
-        left: 0;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        transition: top 0.3s ease-in-out;
-        z-index: 9; /* Ensure it's above other elements but below .checkbtn */
+
+    .origin-grid--item1,
+    .origin-grid--item2{
+        height: 400px;
     }
+
 }

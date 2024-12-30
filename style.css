@@ -29,17 +29,21 @@ a{
 }
 
 .nav-main{
-    font-size: calc(10px + 0.2vw);
+    font-size: calc(10px + 0.3vw);
     gap: 3%;
     justify-content: center;
     align-items: center;
-    padding-top: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav-menu{
     gap: 45px;
-    font-family: 'plus jakarta sans', sans-serif;
-    font-weight: 600;
+    font-family: 'oswald', sans-serif;
+}
+
+.navbar--open{
+    transform: translateX(0);
 }
 
 .nav-link:hover{
@@ -49,20 +53,93 @@ a{
     transition-timing-function: ease-in-out;
 }
 
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    display: none;
-    line-height: 80px;
-    margin-right: 40px;
-    float: right;
-    cursor: pointer;
+.bar{
+    background-color: white;
+    width: 24px;
+    height: 2px;
+    margin: 5px 0px;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    border-radius: 2px;
 }
 
-#check{
+.hamburger{
     display: none;
 }
 
 .content{
     text-align: center;
+}
+
+.slider--content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.headings{
+    line-height: 40px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+.main--heading{
+    color: #21A7B2;
+    font-size: calc(45px + 3vw);
+    font-family: 'dancing script', sans-serif;
+}
+
+.sub--heading{
+    color: white;
+    font-family: 'plus jakarta sans';
+    font-size: calc(20px + 1vw);
+}
+
+.shop--description{
+    color: white;
+    font-family: 'plus jakarta sans', sans-serif;
+    width: 35%;
+    font-size: clamp(7px, calc(4px + 0.7vw), 50px);
+    margin-bottom: 30px;
+    line-height: clamp(15px, 2vw, 50px);
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.menu--btn{
+    background-color: #116A70;
+    color: white;
+    font-family: 'plus jakarta sans', sans-serif;
+    font-weight: 600;
+    font-size: calc(12px + 0.1vw);
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+}
+
+.origin--grid{
+    display: grid;
+    border: 2px solid darkblue;
+    grid-template-columns: 6fr 5fr;
+}
+
+.origin-grid--item1,
+.grid--item2{
+    border: 2px solid red;
+}
+
+.origin-grid--item1{
+    background-color: #18191B;
+}
+
+.origin-grid--item2{
+    background-image: url(assets/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
 }
