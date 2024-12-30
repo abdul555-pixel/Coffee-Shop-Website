@@ -123,17 +123,15 @@ a{
 
 .origin--grid{
     display: grid;
-    border: 2px solid darkblue;
     grid-template-columns: 6fr 5fr;
-}
-
-.origin-grid--item1,
-.grid--item2{
-    border: 2px solid red;
 }
 
 .origin-grid--item1{
     background-color: #18191B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .origin-grid--item2{
@@ -141,5 +139,36 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 350px;
+    height: 500px;
+}
+
+.origin--headings{
+    display: flex;
+    flex-direction: column;
+    line-height: clamp(35px, 3vw, 85px);
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.origin-main--heading{
+    color: #21A7B2;
+    font-size: calc(45px + 3vw);
+    font-family: 'dancing script', sans-serif;
+}
+
+.origin-sub--heading{
+    color: white;
+    font-family: 'plus jakarta sans';
+    font-size: calc(20px + 1vw);
+}
+
+.origin--story{
+    color: white;
+    font-family: 'plus jakarta sans', sans-serif;
+    width: 75%;
+    font-size: clamp(7px, calc(4px + 0.7vw), 50px);
+    margin-bottom: 30px;
+    line-height: clamp(15px, 2vw, 50px);
+    font-weight: 300;
+    letter-spacing: 1.5px;
 }
