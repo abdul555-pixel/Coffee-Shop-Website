@@ -284,12 +284,14 @@ a{
     margin: 0px 50px;
     align-items: center;
     padding-top: 150px;
+    border: 2px solid white;
 }
 
 .coffee-sizes{
     display: grid;
     grid-template-columns: 100px 100px;
     text-align: center;
+    border: 2px solid white;
 }
 
 .medium-price,
@@ -323,12 +325,14 @@ a{
     display: grid;
     grid-template-columns: 400px 100px 100px;
     margin: 20px 50px;
+    border: 2px solid white;
 }
 
 .menu-list-2 {
     background-image: url(assets/bg-5.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    border: 2px solid white;
     background-size: cover;
     height: 800px;
     color: white;
@@ -355,4 +359,68 @@ a{
     justify-content: end; /* Keep the coffee sizes aligned to the left */
     align-items: center;
     padding-top: 150px;
+}
+
+.menu-list-1 .medium-price span,
+.menu-list-1 .large-price span,
+.menu-list-2 .medium-price span,
+.menu-list-2 .large-price span{
+    display: none;
+    color: #209BA5;
+}
+
+.review-parent{
+    display: grid;
+    color: white;
+    grid-template-columns: 5fr 5fr;
+    border: 2px solid white;
+}
+
+.actual-review,
+.review-img{
+    border: 2px solid white;
+}
+
+.review-img{
+    background-image: url(assets/bg-side-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.actual-review{
+    background-color: #116A70;
+}
+
+.review-main--heading{
+    color: #21A7B2;
+    font-size: calc(45px + 3vw);
+    font-family: 'dancing script', sans-serif;
+    margin-top: 30px;
+}
+
+.review-sub--heading{
+    color: white;
+    font-family: 'plus jakarta sans';
+    font-size: calc(20px + 1vw);
+}
+
+.review-headings{
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.review-detail{
+    color: white;
+    font-family: 'plus jakarta sans', sans-serif;
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 75%;
+    font-size: clamp(7px, calc(4px + 0.7vw), 50px);
+    margin-bottom: 30px;
+    line-height: clamp(15px, 2vw, 50px);
+    font-weight: 300;
+    letter-spacing: 1.5px;
 }

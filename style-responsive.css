@@ -111,8 +111,7 @@
     }
 
     .medium-coffee{
-        text-align: right;
-        margin-right: 20px;
+        text-align: left;
     }
 
     .coffee-name{
@@ -120,8 +119,15 @@
     }
 
     .large-coffee{
-        text-align: left;
-        margin-left: 20px;
+        text-align: right;
+    }
+    
+    .menu-list-1 .medium-price span,
+    .menu-list-1 .large-price span,
+    .menu-list-2 .medium-price span,
+    .menu-list-2 .large-price span{
+        display: inline;
+        color: ;
     }
 
     .menu-list-1{
