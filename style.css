@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    background-color: #18191B;
 }
 
 * {
@@ -324,7 +325,7 @@ a{
     margin: 20px 50px;
 }
 
-.menu-list-2{
+.menu-list-2 {
     background-image: url(assets/bg-5.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -332,4 +333,26 @@ a{
     height: 800px;
     color: white;
     padding: 0px 50px;
+    position: relative; /* Ensure relative positioning for child elements */
+}
+
+.menu-list-2 .menu-item1,
+.menu-list-2 .menu-item2,
+.menu-list-2 .menu-item3,
+.menu-list-2 .menu-item4,
+.menu-list-2 .menu-item5,
+.menu-list-2 .menu-item6,
+.menu-list-2 .menu-item7 {
+    display: grid;
+    grid-template-columns: 400px 100px 100px;
+    justify-content: end; /* Align items to the right */
+    margin: 20px 0; /* Adjust spacing as needed */
+}
+
+.menu-list-2 .menu-coffee {
+    display: grid;
+    grid-template-columns: 400px 90px 60px;
+    justify-content: end; /* Keep the coffee sizes aligned to the left */
+    align-items: center;
+    padding-top: 150px;
 }

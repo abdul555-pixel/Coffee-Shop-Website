@@ -125,19 +125,34 @@
     }
 
     .menu-list-1{
-        height: 150vh;
+        height: 100%;
     }
     .menu-list-2{
-        height: 150vh;
+        height: 100%;
+    }
+
+    .menu-list-2 .menu-item1,
+    .menu-list-2 .menu-item2,
+    .menu-list-2 .menu-item3,
+    .menu-list-2 .menu-item4,
+    .menu-list-2 .menu-item5,
+    .menu-list-2 .menu-item6,
+    .menu-list-2 .menu-item7 {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-list-2 .menu-coffee{
+        grid-template-columns: 1fr;
+        padding-top: 70px;
     }
 }
 
 @media (max-width: 400px) {
     .menu-list-1{
-        height: 160vh;
+        height: 100%;
     }
 
     .menu-list-2{
-        height: 160vh;
+        height: 100%;
     }
 }
