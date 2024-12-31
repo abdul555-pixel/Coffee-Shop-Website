@@ -24,9 +24,13 @@
         grid-template-columns: 1fr;
     }
 
-    .origin-grid--item1,
-    .origin-grid--item2{
+    .origin-grid--item1
+    {
         height: 400px;
+    }
+
+    .origin-grid--item2{
+        height: 250px;
     }
 
     .origin--story{
@@ -36,6 +40,15 @@
     .shop--description{
         font-size: clamp(14px, calc(4px + 0.7vw), 50px);
         width: 60%;
+    }
+
+    .offer-grid--item1,
+    .offer-grid--item4,
+    .offer-grid--item5,
+    .offer-grid--item8,
+    .offer-grid--item9,
+    .offer-grid--item12{
+        height: 250px;
     }
 
     .offer-grid--item2,

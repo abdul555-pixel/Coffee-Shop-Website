@@ -127,7 +127,7 @@ a{
 
 .origin--grid{
     display: grid;
-    grid-template-columns: 6fr 5fr;
+    grid-template-columns: 5fr 5fr;
 }
 
 .origin-grid--item1{
@@ -175,18 +175,6 @@ a{
     line-height: clamp(15px, 2vw, 50px);
     font-weight: 300;
     letter-spacing: 1.5px;
-}
-
-.offer-headings{
-    background-image: url(assets/slide-1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center !important;
 }
 
 .offer--headings{
@@ -238,6 +226,15 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.offer-grid--item1,
+.offer-grid--item4,
+.offer-grid--item5,
+.offer-grid--item8,
+.offer-grid--item9,
+.offer-grid--item12{
+    height: 400px;
 }
 
 
