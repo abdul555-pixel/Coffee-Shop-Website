@@ -284,14 +284,12 @@ a{
     margin: 0px 50px;
     align-items: center;
     padding-top: 150px;
-    border: 2px solid white;
 }
 
 .coffee-sizes{
     display: grid;
     grid-template-columns: 100px 100px;
     text-align: center;
-    border: 2px solid white;
 }
 
 .medium-price,
@@ -325,14 +323,12 @@ a{
     display: grid;
     grid-template-columns: 400px 100px 100px;
     margin: 20px 50px;
-    border: 2px solid white;
 }
 
 .menu-list-2 {
     background-image: url(assets/bg-5.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    border: 2px solid white;
     background-size: cover;
     height: 800px;
     color: white;
