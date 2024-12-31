@@ -12,6 +12,10 @@
         display: none;
     }
 
+    .slider--content{
+        margin-top: 100px;
+    }
+
     .nav-main{
         justify-content: space-between;
     }
@@ -34,14 +38,28 @@
         width: 60%;
     }
 
-    .offer-row--1,
-    .offer-row--2{
+    .offer-grid--item2,
+    .offer-grid--item3,
+    .offer-grid--item6,
+    .offer-grid--item7,
+    .offer-grid--item10,
+    .offer-grid--item11,
+    .offer-grid--item12{
+        padding-top: 30px;
+    }
+    
+    .offer--grid-1,
+    .offer--grid-2,
+    .offer--grid-3,
+    .offer--grid-4,
+    .offer--grid-5,
+    .offer--grid-6,
+    .offer--grid-7,
+    .offer--grid-8,
+    .offer--grid-9,
+    .offer--grid-10,
+    .offer--grid-11,
+    .offer--grid-12{
         grid-template-columns: 1fr;
-        row-gap: 30px;
     }
-
-    .offer--description{
-        width: 60%;
-    }
-
 }
