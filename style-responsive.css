@@ -80,4 +80,64 @@
     .offer--grid-12{
         grid-template-columns: 1fr;
     }
+
+    .menu-item1,
+    .menu-item2,
+    .menu-item3,
+    .menu-item4,
+    .menu-item5,
+    .menu-item6,
+    .menu-item7 {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        margin: 10px auto; /* Reduce margin */
+        border-bottom: 2px solid grey;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .menu-item7{
+        border-bottom: none !important;
+    }
+
+    .menu-coffee {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        padding-top: 50px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .coffee-sizes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .medium-coffee{
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .coffee-name{
+        text-align: center;
+    }
+
+    .large-coffee{
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .menu-list-1{
+        height: 150vh;
+    }
+    .menu-list-2{
+        height: 150vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu-list-1{
+        height: 160vh;
+    }
+
+    .menu-list-2{
+        height: 160vh;
+    }
 }

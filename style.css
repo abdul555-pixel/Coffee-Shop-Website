@@ -243,7 +243,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
+    height: 50vh;
 }
 
 .menu-main--heading{
@@ -272,9 +272,64 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: 100vh;
+    color: white;
+    padding: 0px 50px;
+}
+
+.menu-coffee{
+    display: grid;
+    grid-template-columns: 400px 200px 200px;
+    margin: 0px 50px;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.coffee-sizes{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+}
+
+.medium-price,
+.large-price{
+    text-align: center;
+    font-family: 'oswald', sans-serif;
+}
+
+.coffee-name{
+    font-family: 'oswald', sans-serif;
+    font-size: clamp(14px, calc(18px + 0.3vw), 28px);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.coffee-name span{
+    font-size: 14px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: 300 !important;
+    font-style: italic;
+    color: grey;
+}
+
+.menu-item1,
+.menu-item2,
+.menu-item3,
+.menu-item4,
+.menu-item5,
+.menu-item6,
+.menu-item7{
+    display: grid;
+    grid-template-columns: 400px 100px 100px;
+    margin: 20px 50px;
 }
 
 .menu-list-2{
-    background-image: url(assets/);
+    background-image: url(assets/bg-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    color: white;
+    padding: 0px 50px;
 }
