@@ -56,9 +56,14 @@
     .offer-grid--item6,
     .offer-grid--item7,
     .offer-grid--item10,
-    .offer-grid--item11,
-    .offer-grid--item12{
-        padding-top: 30px;
+    .offer-grid--item11{
+        padding-top: 60px;
+    }
+
+    .offer-grid--item3,
+    .offer-grid--item7,
+    .offer-grid--item11{
+        padding-bottom: 30px;
     }
     
     .offer--grid-1,
