@@ -164,6 +164,39 @@
     }
 }
 
+@media (max-width: 990px) {
+    .footer{
+        flex-direction: column;
+    }
+
+    .address{
+        text-align: center;
+    }
+
+    .socialmedia--icons{
+        justify-content: center;
+    }
+
+    .footer-logo{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 730px) {
+    .contact-number{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .right-side{
+        margin-top: 20px;
+    }
+
+    .left-side{
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 400px) {
     .menu-list-1{
         height: 100%;
@@ -178,9 +211,5 @@
     .contact-number{
         justify-content: center;
         text-align: center;
-    }
-
-    .left-side{
-        margin-top: 0px;
     }
 }
