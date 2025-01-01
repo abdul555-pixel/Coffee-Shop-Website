@@ -151,6 +151,17 @@
         grid-template-columns: 1fr;
         padding-top: 70px;
     }
+
+    #view-menu{
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .review-parent{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 400px) {

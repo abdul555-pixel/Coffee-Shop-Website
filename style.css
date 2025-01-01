@@ -273,7 +273,7 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     color: white;
     padding: 0px 50px;
 }
@@ -330,7 +330,7 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 800px;
+    height: 100%;
     color: white;
     padding: 0px 50px;
     position: relative; /* Ensure relative positioning for child elements */
@@ -365,28 +365,51 @@ a{
     color: #209BA5;
 }
 
+.view-menu-1{
+    display: flex;
+    justify-content: start;
+    margin-left: 50px;
+}
+
+.view-menu-2{
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#view-menu button{
+    background-color: #116A70;
+    color: white;
+    font-family: 'plus jakarta sans', sans-serif;
+    font-weight: 600;
+    font-size: calc(12px + 0.1vw);
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+}
+
 .review-parent{
     display: grid;
     color: white;
     grid-template-columns: 5fr 5fr;
-    border: 2px solid white;
 }
 
-.actual-review,
-.review-img{
-    border: 2px solid white;
-}
 
 .review-img{
     background-image: url(assets/bg-side-1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 100%;
 }
 
 .actual-review{
     background-color: #116A70;
+    display: grid;
+    place-items: center;
+    height: 100%;
 }
 
 .review-main--heading{
@@ -405,14 +428,12 @@ a{
 .review-headings{
     text-align: center;
     align-items: center;
-    display: flex;
+ 
 }
 
 .review-detail{
     color: white;
     font-family: 'plus jakarta sans', sans-serif;
-    margin-left: 100px;
-    margin-top: 30px;
     width: 75%;
     font-size: clamp(7px, calc(4px + 0.7vw), 50px);
     margin-bottom: 30px;
