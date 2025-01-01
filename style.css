@@ -435,9 +435,47 @@ a{
     color: white;
     font-family: 'plus jakarta sans', sans-serif;
     width: 75%;
-    font-size: clamp(10px, calc(4px + 0.7vw), 50px);
+    font-size: clamp(14px, calc(4px + 0.7vw), 50px);
     margin-bottom: 30px;
     line-height: clamp(15px, 2vw, 50px);
     font-weight: 300;
     letter-spacing: 1.5px;
+}
+
+.contact-number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+.right-side{
+    display: flex;
+    gap: 10px;
+    margin: 0px 40px;
+    font-family: 'plus jakarta sans', sans-serif;
+    align-items: center;
+}
+
+.left-side{
+    margin: 0px 40px;
+}
+
+.left-side button{
+    background-color: #18191B;
+    border: 4px solid #209BA5;
+    color: white;
+    padding: 5px 20px;
+    font-family: 'oswald', sans-serif;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.footer-1{
+    background-image: url(assets/bg-6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
 }

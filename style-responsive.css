@@ -173,3 +173,14 @@
         height: 100%;
     }
 }
+
+@media (max-width: 560px) {
+    .contact-number{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .left-side{
+        margin-top: 0px;
+    }
+}
