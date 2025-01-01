@@ -220,3 +220,21 @@
         width: 60%;
     }
 }
+
+@media (max-height: 678px) {
+    .footer{
+        height: 80vh;
+    }
+}
+
+@media (max-height: 455px) {
+    .footer{
+        height: 90vh;
+    }
+}
+
+@media (max-height: 400px) {
+    .footer{
+        height: 100vh;
+    }
+}
