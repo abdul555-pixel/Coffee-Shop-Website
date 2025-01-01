@@ -452,10 +452,14 @@ a{
 
 .right-side{
     display: flex;
-    gap: 10px;
     margin: 0px 80px;
     font-family: 'plus jakarta sans', sans-serif;
     align-items: center;
+    font-size: clamp(10px, calc(14px + 0.2vw), 20px);
+}
+
+.right-side i{
+    margin-right: 10px;
 }
 
 .left-side{
@@ -469,7 +473,7 @@ a{
     color: white;
     padding: 7px 20px;
     font-family: 'plus jakarta sans', sans-serif;
-    font-size: 16px;
+    font-size: clamp(8px, calc(14px + 0.3vw), 18px);
     border-radius: 20px;
 }
 
@@ -527,35 +531,37 @@ a{
     font-size: clamp(18px, calc(20px + 0.8vw), 22px);
 }
 
-.footer{
+.footer {
     color: white;
-    height: 25vh; 
-    background-color: #0E464A; 
-    display: flex; 
-    justify-content: center; 
+    height: 25vh;
+    background-color: #0E464A;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.address{
-    display: flex; 
-    flex-direction: column; 
-    justify-content: start; 
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     width: 30%;
 }
 
-.footer-logo{
-    display: flex; 
-    justify-content: center; 
+.footer-logo {
+    display: flex;
+    justify-content: center;
     width: clamp(20%, 30%);
     width: 25%;
 }
 
-.socialmedia--icons{
+.socialmedia--icons {
     display: flex;
     justify-content: end;
     width: 30%;
 }
 
-.socialmedia--icons i{
+.socialmedia--icons i {
     margin-right: 20px;
 }
+
+
