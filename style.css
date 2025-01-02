@@ -115,7 +115,7 @@ a{
 }
 
 .menu--btn{
-    background-color: rgb(162, 144, 117);
+    background-color: rgb(105 88 63);
     color: white;
     font-family: 'plus jakarta sans', sans-serif;
     font-weight: 600;
@@ -132,7 +132,7 @@ a{
 }
 
 .origin-grid--item1{
-    background-color: rgb(162, 144, 117);
+    background-color: rgb(105 88 63);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,7 +162,7 @@ a{
 }
 
 .origin-sub--heading{
-    color: #18191B;
+    color: rgb(210, 187, 152);
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
 }
@@ -190,7 +190,7 @@ a{
 }
 
 .offer-sub--heading{
-    color: #18191B;
+    color: rgb(210, 187, 152);
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
 }
@@ -223,7 +223,7 @@ a{
 .offer-grid--item10,
 .offer-grid--item11,
 .offer-grid--item12{
-    background-color: rgb(162, 144, 117);
+    background-color: rgb(105 88 63);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -379,7 +379,7 @@ a{
 }
 
 #view-menu button{
-    background-color: rgb(162, 144, 117);
+    background-color: rgb(105 88 63);
     color: white;
     font-family: 'plus jakarta sans', sans-serif;
     font-weight: 600;
@@ -406,7 +406,7 @@ a{
 }
 
 .actual-review{
-    background-color: rgb(162, 144, 117);
+    background-color: rgb(105 88 63);
     display: grid;
     place-items: center;
     height: 100%;
@@ -420,7 +420,7 @@ a{
 }
 
 .review-sub--heading{
-    color: white;
+    color: rgb(210, 187, 152);
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
 }
