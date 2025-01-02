@@ -98,7 +98,7 @@ a{
 }
 
 .sub--heading{
-    color: white;
+    color: rgb(210, 187, 152);
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
 }
@@ -115,7 +115,7 @@ a{
 }
 
 .menu--btn{
-    background-color: #116A70;
+    background-color: rgb(162, 144, 117);
     color: white;
     font-family: 'plus jakarta sans', sans-serif;
     font-weight: 600;
@@ -132,7 +132,7 @@ a{
 }
 
 .origin-grid--item1{
-    background-color: #18191B;
+    background-color: rgb(162, 144, 117);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,7 +162,7 @@ a{
 }
 
 .origin-sub--heading{
-    color: white;
+    color: #18191B;
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
 }
@@ -190,7 +190,7 @@ a{
 }
 
 .offer-sub--heading{
-    color: white;
+    color: #18191B;
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
 }
@@ -223,7 +223,7 @@ a{
 .offer-grid--item10,
 .offer-grid--item11,
 .offer-grid--item12{
-    background-color: #18191B;
+    background-color: rgb(162, 144, 117);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,7 +254,7 @@ a{
 }
 
 .menu-sub--heading{
-    color: white;
+    color: rgb(210, 187, 152);
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
 }
@@ -379,7 +379,7 @@ a{
 }
 
 #view-menu button{
-    background-color: #116A70;
+    background-color: rgb(162, 144, 117);
     color: white;
     font-family: 'plus jakarta sans', sans-serif;
     font-weight: 600;
@@ -406,7 +406,7 @@ a{
 }
 
 .actual-review{
-    background-color: #116A70;
+    background-color: rgb(162, 144, 117);
     display: grid;
     place-items: center;
     height: 100%;
@@ -444,6 +444,7 @@ a{
 
 .contact-number{
     display: flex;
+    background-color: #191919;
     justify-content: space-between;
     align-items: center;
     height: 120px;
@@ -534,7 +535,7 @@ a{
 .footer {
     color: white;
     height: 25vh;
-    background-color: #0E464A;
+    background-color: #116A70;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -624,6 +625,7 @@ a{
 
 .coffee{
     width: 100%;
+    color: #209BA5 !important;
 }
 
 .menu-page--medium-size,
@@ -657,7 +659,7 @@ a{
 
 .menu-page--coffee-name span{
     font-family: Arial, Helvetica, sans-serif;
-    color: grey;
+    color: #191919;
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
