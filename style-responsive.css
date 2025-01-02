@@ -238,3 +238,65 @@
         height: 100vh;
     }
 }
+
+@media (max-width: 1430px) {
+    #menu-page--items{
+        gap: 80px;
+    }
+}
+
+@media (max-width: 1280px) {
+    #menu-page--items{
+        gap: 30px;
+    }
+
+    .menu-page--medium-size,
+    .menu-page--large-size{
+        text-align: center;
+        font-family: 'plus jakarta sans';
+        font-size: 16px;
+    }
+
+    .menu-page--medium-size{
+        margin-right: -50px;
+    }
+}
+
+@media (max-width: 990px) {
+    .menu-page--list-name{
+        justify-content: center;
+        font-size: 8px;
+    }
+
+    .menu-page--medium-size{
+        gap: 100px !important;
+        margin-right: 0px;
+    }
+
+    #menu-page--items{
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .menu-page--parent-container1,
+    .menu-page--parent-container2 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 857px) {
+    .menu-page--list-name{
+        justify-content: space-between;
+    }
+    .menu-page--parent-container1,
+    .menu-page--parent-container2{
+        margin: 50px 30px;
+    }
+}
+
+@media (max-width: 477px) {
+    .menu-page--list-name {
+        gap: 20px;
+    }
+}
