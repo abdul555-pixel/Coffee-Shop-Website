@@ -132,6 +132,7 @@ a{
     padding: 10px 30px;
     border: none;
     border-radius: 100px;
+    z-index: 10;
 }
 
 .origin--grid{
@@ -386,7 +387,7 @@ a{
     margin-bottom: 30px;
 }
 
-#view-menu button{
+#view-menu a{
     background-color: rgb(105 88 63);
     color: white;
     font-family: 'plus jakarta sans', sans-serif;
@@ -484,6 +485,7 @@ a{
     font-family: 'plus jakarta sans', sans-serif;
     font-size: clamp(8px, calc(14px + 0.3vw), 18px);
     border-radius: 20px;
+    z-index: 10;
 }
 
 .left-side button:hover{
