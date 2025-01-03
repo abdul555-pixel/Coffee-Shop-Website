@@ -28,11 +28,11 @@ setInterval(() => {
         count++;
         slideImage();
     }
-}, 5000);
+}, 500);
 
 setInterval(() => {
     if(count == (slides.length - 1)) {
         count--;
         resetImage();
     }
-}, 10000)
+}, 1000)
