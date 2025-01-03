@@ -24,15 +24,11 @@ const resetImage = () => {
 }
 
 setInterval(() => {
-    if(count <= 0) {
+    if (count < slides.length - 1) {
         count++;
         slideImage();
-    }
-}, 1000);
-
-setInterval(() => {
-    if(count == (slides.length - 1)) {
+    } else {
         count--;
         resetImage();
     }
-}, 2000)
+}, 1000); // Adjust the time interval as needed
