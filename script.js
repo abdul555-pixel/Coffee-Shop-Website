@@ -31,4 +31,4 @@ setInterval(() => {
         count--;
         resetImage();
     }
-}, 1000); // Adjust the time interval as needed
+}, 5000); // Adjust the time interval as needed
