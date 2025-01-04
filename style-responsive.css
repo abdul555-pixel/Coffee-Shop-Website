@@ -315,15 +315,21 @@
     }
 }
 
-@media (max-height: 440px) {
+@media (max-height: 462px) {
     .slider-container{
         height: 200%;
     }
 }
 
+@media (max-height: 347px) {
+    .slider-container{
+        height: 250%;
+    }
+}
+
 @media (max-width: 1945px, min-width: 1945px) {
     .slider-container{
-        height: 200vh;
+        height: 200%;
     }
 
     .slide{
