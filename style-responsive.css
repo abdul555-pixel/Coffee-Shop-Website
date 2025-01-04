@@ -300,3 +300,12 @@
         gap: 20px;
     }
 }
+
+@media (max-height: 710px) {
+    .slider-container{
+        height: 200vh;
+    }
+    .slide{
+        height: 100%;
+    }
+}
