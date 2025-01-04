@@ -283,6 +283,10 @@
         display: flex;
         flex-direction: column;
     }
+
+    .slide{
+        object-position: bottom !important;
+    }
 }
 
 @media (max-width: 857px) {
@@ -301,11 +305,29 @@
     }
 }
 
-@media (max-height: 710px) {
+@media (max-height: 800px) {
     .slider-container{
-        height: 200vh;
+        height: 150%;
     }
     .slide{
         height: 100%;
+        object-position: center;
     }
 }
+
+@media (max-height: 440px) {
+    .slider-container{
+        height: 200%;
+    }
+}
+
+@media (max-width: 1945px, min-width: 1945px) {
+    .slider-container{
+        height: 200vh;
+    }
+
+    .slide{
+        height: 100%;
+        object-position: bottom;
+    }
+} 

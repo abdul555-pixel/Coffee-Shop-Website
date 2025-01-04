@@ -7,6 +7,20 @@ slides.forEach(
     }
 );
 
+const goNext = () => {
+    if(count < (slides.length - 1)) {
+        count++;
+        slideImage();
+    }
+}
+
+const goPrev = () => {
+    if(count > 0) {
+        count--;
+        slideImage();
+    }
+}
+
 const slideImage = () => {
     slides.forEach(
         (slide) => {
@@ -22,6 +36,7 @@ const resetImage = () => {
         }
     )
 }
+
 
 setInterval(() => {
     if (count < slides.length - 1) {
