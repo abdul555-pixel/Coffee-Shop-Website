@@ -72,7 +72,6 @@ a{
 
 .hamburger.active{
     position: fixed;
-    margin-left: 37rem;
 }
 
 .hamburger.active .bar:nth-child(1){
