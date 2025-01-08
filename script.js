@@ -70,13 +70,11 @@ menuItems.forEach(
     }
   )
 
-var textWrapper = document.querySelector('.main--heading');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline()
   .add({
-    targets: '.main--heading .letter',
-    translateX: [40,0],
+    targets: '.main--heading',
+    translateY: [40,0],
     translateZ: 0,
     opacity: [0,1],
     easing: "easeOutExpo",
@@ -84,13 +82,10 @@ anime.timeline()
     delay: (el, i) => 100 + 50 * i
   });
 
-var textWrapper2 = document.querySelector('.sub--heading');
-textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
 anime.timeline()
   .add({
-    targets: '.sub--heading .letter',
-    translateX: [40,0],
+    targets: '.sub--heading',
+    translateY: [70,0],
     translateZ: 0,
     opacity: [0,1],
     easing: "easeOutExpo",
@@ -102,7 +97,7 @@ anime.timeline()
 anime.timeline()
   .add({
     targets: '.menu--btn',
-    translateY: [40, 0],
+    translateY: [70, 0],
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 3000, // Adjust duration as needed
@@ -112,7 +107,7 @@ anime.timeline()
 anime.timeline()
   .add({
     targets: '.shop--description',
-    translateY: [20, 0],
+    translateY: [50, 0],
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 3000, // Adjust duration as needed
