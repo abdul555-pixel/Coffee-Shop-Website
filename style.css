@@ -193,6 +193,7 @@ a{
 .origin--grid{
     display: grid;
     grid-template-columns: 5fr 5fr;
+    animation: all 1s ease-in-out;
 }
 
 .origin-grid--item1{

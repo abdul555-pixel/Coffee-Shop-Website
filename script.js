@@ -113,3 +113,65 @@ anime.timeline()
     duration: 3000, // Adjust duration as needed
   });
 
+// Function to animate elements when they appear in the viewport
+function animateOnScroll(target, animation) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            anime.timeline().add(animation);
+            observer.unobserve(entry.target); // Stop observing once the animation is triggered
+          }
+        });
+      },
+      { threshold: 0.2 } // Adjust visibility threshold as needed
+    );
+  
+    observer.observe(document.querySelector(target));
+  }
+  
+  // Animation for origin-main--heading
+  animateOnScroll('.origin-main--heading', {
+    targets: '.origin-main--heading',
+    translateY: [50, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 3000,
+  });
+  
+  // Animation for origin-sub--heading
+  animateOnScroll('.origin-sub--heading', {
+    targets: '.origin-sub--heading',
+    translateY: [50, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 4000,
+  });
+  
+
+anime.timeline()
+.add({
+targets: '.offer-main--heading',
+translateX: [50, 0],
+opacity: [0, 1],
+easing: "easeOutExpo",
+duration: 3000, // Adjust duration as needed
+});
+
+anime.timeline()
+.add({
+targets: '.offer-sub--heading',
+translateX: [50, 0],
+opacity: [0, 1],
+easing: "easeOutExpo",
+duration: 3000, // Adjust duration as needed
+});
+
+anime.timeline()
+.add({
+targets: '.offer--detail',
+translateX: [50, 0],
+opacity: [0, 1],
+easing: "easeOutExpo",
+duration: 3000, // Adjust duration as needed
+});
