@@ -70,13 +70,10 @@ a{
     display: none;
 }
 
-.hamburger.active{
-    position: fixed;
-}
-
 .hamburger.active .bar:nth-child(1){
     transform: translateY(8px) rotate(45deg);
     transition: all 0.3s ease-in-out;
+    position: fixed;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -86,6 +83,7 @@ a{
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
     transition: all 0.3s ease-in-out;
+    position: fixed;
 }
 
 .bar{
