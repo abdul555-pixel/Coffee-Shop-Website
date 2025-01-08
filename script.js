@@ -65,11 +65,56 @@ function toggleMenu() {
 hamburger.addEventListener("click", toggleMenu);
 
 menuItems.forEach( 
-
     function(menuItem) { 
-  
       menuItem.addEventListener("click", toggleMenu);
-  
     }
-  
   )
+
+var textWrapper = document.querySelector('.main--heading');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline()
+  .add({
+    targets: '.main--heading .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 100 + 50 * i
+  });
+
+var textWrapper2 = document.querySelector('.sub--heading');
+textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline()
+  .add({
+    targets: '.sub--heading .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 100 + 50 * i
+  });
+
+// Animate the menu button as a whole
+anime.timeline()
+  .add({
+    targets: '.menu--btn',
+    translateY: [40, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 3000, // Adjust duration as needed
+  });
+
+// Animate the shop description as a whole
+anime.timeline()
+  .add({
+    targets: '.shop--description',
+    translateY: [20, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 3000, // Adjust duration as needed
+  });
+
