@@ -70,8 +70,12 @@ a{
     display: none;
 }
 
+.hamburger.active{
+    margin-top: -0.5rem;
+}
+
 .hamburger.active .bar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(12px) rotate(45deg);
     transition: all 0.3s ease-in-out;
     position: fixed;
 }
