@@ -119,7 +119,7 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgb(105 88 63);
+        background-color: #0E464A;
         height: 100vh;
         width: 50%;
         transition: all 0.3s ease-in-out;
@@ -599,7 +599,7 @@ a{
 .footer {
     color: white;
     height: 25vh;
-    background-color: #116A70;
+    background-color: #0E464A;
     display: flex;
     justify-content: center;
     align-items: center;
