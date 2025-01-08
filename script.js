@@ -46,4 +46,30 @@ setInterval(() => {
         count--;
         resetImage();
     }
-}, 5000); // Adjust the time interval as needed
+}, 8000); // Adjust the time interval as needed
+ 
+const menu = document.querySelector(".nav-menu");
+const menuItems = document.querySelectorAll(".nav-link");
+const hamburger= document.querySelector(".hamburger");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    hamburger.classList.remove("active");
+  } else {
+    menu.classList.add("showMenu");
+    hamburger.classList.add("active");
+  }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach( 
+
+    function(menuItem) { 
+  
+      menuItem.addEventListener("click", toggleMenu);
+  
+    }
+  
+  )
