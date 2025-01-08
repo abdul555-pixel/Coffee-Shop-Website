@@ -75,7 +75,7 @@ a{
 }
 
 .hamburger.active .bar:nth-child(1){
-    transform: translateY(12px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
     transition: all 0.3s ease-in-out;
     position: fixed;
 }
@@ -119,7 +119,7 @@ a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        background-color: rgb(105 88 63);
         height: 100vh;
         width: 50%;
         transition: all 0.3s ease-in-out;
