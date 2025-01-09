@@ -224,12 +224,14 @@ a{
     color: #21A7B2;
     font-size: calc(45px + 3vw);
     font-family: 'dancing script', sans-serif;
+    animation: all 1s ease-in-out;
 }
 
 .origin-sub--heading{
     color: rgb(210, 187, 152);
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
+    animation: all 1s ease-in-out;
 }
 
 .origin--story{

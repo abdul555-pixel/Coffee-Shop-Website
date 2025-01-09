@@ -124,54 +124,113 @@ function animateOnScroll(target, animation) {
           }
         });
       },
-      { threshold: 0.2 } // Adjust visibility threshold as needed
+      { threshold: 0.5 } // Adjust visibility threshold as needed
     );
   
     observer.observe(document.querySelector(target));
   }
   
-  // Animation for origin-main--heading
-  animateOnScroll('.origin-main--heading', {
-    targets: '.origin-main--heading',
-    translateY: [50, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 3000,
-  });
-  
-  // Animation for origin-sub--heading
-  animateOnScroll('.origin-sub--heading', {
-    targets: '.origin-sub--heading',
-    translateY: [50, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 4000,
-  });
+// Animation for origin-main--heading
+animateOnScroll('.origin-main--heading', {
+targets: '.origin-main--heading',
+translateY: [50, 0],
+opacity: [0, 1],
+easing: "easeOutExpo",
+duration: 3000,
+});
+
+// Animation for origin-sub--heading
+animateOnScroll('.origin-sub--heading', {
+targets: '.origin-sub--heading',
+translateY: [50, 0],
+opacity: [0, 1],
+easing: "easeOutExpo",
+duration: 4000,
+});
   
 
-anime.timeline()
-.add({
-targets: '.offer-main--heading',
+animateOnScroll('.offer-1',{
+targets: '.offer-1',
 translateX: [50, 0],
 opacity: [0, 1],
 easing: "easeOutExpo",
 duration: 3000, // Adjust duration as needed
 });
 
-anime.timeline()
-.add({
-targets: '.offer-sub--heading',
-translateX: [50, 0],
-opacity: [0, 1],
-easing: "easeOutExpo",
-duration: 3000, // Adjust duration as needed
+animateOnScroll('.offer-2',{
+    targets: '.offer-2',
+    translateX: [0, 50],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 3000, // Adjust duration as needed
+    });
+
+animateOnScroll('.offer-3',{
+    targets: '.offer-3',
+    translateX: [50, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 3000, // Adjust duration as needed
+    });
+animateOnScroll('.offer-4',{
+    targets: '.offer-4',
+    translateX: [0, 50],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 3000, // Adjust duration as needed
+    });
+
+animateOnScroll('.offer-5',{
+    targets: '.offer-5',
+    translateX: [50, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 3000// Adjust duration as needed
+    });
+
+animateOnScroll('.offer-6',{
+    targets: '.offer-6',
+    translateX: [0, 50],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 3000 // Adjust duration as needed
+    });
+animateOnScroll('.menu-animation',{
+    targets: '.menu-animation',
+    translateY: [0, -20],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1200
 });
 
-anime.timeline()
-.add({
-targets: '.offer--detail',
-translateX: [50, 0],
-opacity: [0, 1],
-easing: "easeOutExpo",
-duration: 3000, // Adjust duration as needed
+animateOnScroll('.menu-things',{
+    targets: '.menu-things',
+    translateX: [0, 10],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1200
+});
+
+animateOnScroll('.menu-things-2',{
+    targets: '.menu-things-2',
+    translateX: [10, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1200
+});
+
+animateOnScroll('.review-animation',{
+    targets: '.review-animation',
+    translateX: [50, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 3000 // Adjust duration as needed
+});
+
+animateOnScroll('#view-menu',{
+    targets: '.view-menu-1',
+    translateX: [10, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 3000 // Adjust duration as needed
 });
