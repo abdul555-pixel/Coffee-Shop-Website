@@ -151,7 +151,7 @@ duration: 4000,
 
 animateOnScroll('.offer-1',{
 targets: '.offer-1',
-translateX: [50, 0],
+translateY: [50, 0],
 opacity: [0, 1],
 easing: "easeOutExpo",
 duration: 3000, // Adjust duration as needed
@@ -159,7 +159,7 @@ duration: 3000, // Adjust duration as needed
 
 animateOnScroll('.offer-2',{
     targets: '.offer-2',
-    translateX: [0, 50],
+    translateY: [50, 0],
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 3000, // Adjust duration as needed
@@ -167,14 +167,14 @@ animateOnScroll('.offer-2',{
 
 animateOnScroll('.offer-3',{
     targets: '.offer-3',
-    translateX: [50, 0],
+    translateY: [50, 0],
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 3000, // Adjust duration as needed
     });
 animateOnScroll('.offer-4',{
     targets: '.offer-4',
-    translateX: [0, 50],
+    translateY: [50, 0],
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 3000, // Adjust duration as needed
@@ -182,7 +182,7 @@ animateOnScroll('.offer-4',{
 
 animateOnScroll('.offer-5',{
     targets: '.offer-5',
-    translateX: [50, 0],
+    translateY: [50, 0],
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 3000// Adjust duration as needed
@@ -190,7 +190,7 @@ animateOnScroll('.offer-5',{
 
 animateOnScroll('.offer-6',{
     targets: '.offer-6',
-    translateX: [0, 50],
+    translateY: [50, 0],
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 3000 // Adjust duration as needed
