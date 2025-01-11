@@ -70,63 +70,44 @@ menuItems.forEach(
     }
   )
 
-  
-// Function to check if an element is in the viewport
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
-    return rect.top >= 0 && rect.bottom <= window.innerHeight;
-  }
-  
-  // Function to animate elements when they are in the viewport
-  function animateOnScroll() {
-    const headings = document.querySelectorAll('.origin-main--heading');
-  
-    headings.forEach((heading) => {
-      if (isInViewport(heading) && !heading.hasAttribute('data-scroll')) {
-        heading.setAttribute('data-scroll', 'in');
-        
-        const chars = heading.querySelectorAll('.char');
-        chars.forEach((char, index) => {
-          chars.style.animationDelay = `${0.5 + (-0.1 * index)}s`;
-        });
-      }
-    });
-  }
-  
-  // Attach the function to the scroll event
-  window.addEventListener('scroll', animateOnScroll);
-  
-  // Call the function initially to animate elements already in the viewport
-  animateOnScroll();
-  
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+}
 
-
-// Function to check if an element is in the viewport
-function isInViewport1(element) {
-    const rect = element.getBoundingClientRect();
-    return rect.top >= 0 && rect.bottom <= window.innerHeight;
-  }
-  
-  // Reusable function to animate elements
-  function animateOnScroll1(targetClass, itemClass) {
+// Function to animate elements when they are in the viewport
+function animateOnScroll(targetClass) {
     const elements = document.querySelectorAll(`.${targetClass}`);
-  
+
     elements.forEach((element) => {
-      if (isInViewport1(element) && !element.hasAttribute('data-scroll')) {
-        element.setAttribute('data-scroll', 'in');
-  
-        const items = element.querySelectorAll(`.${itemClass}`);
-        items.forEach((item, index) => {
-          item.style.animationDelay = `${0.5 + (-0.1 * index)}s`;
-        });
-      }
+        if (isInViewport(element) && !element.hasAttribute('data-scroll')) {
+            element.setAttribute('data-scroll', 'in'); // Trigger the animation
+        }
     });
-  }
-  
-  // Attach the function to the scroll event and make it reusable
-  window.addEventListener('scroll', () => {
-    animateOnScroll1('origin-sub--heading', 'word');
-  });
-  
-  // Call the function initially to animate elements already in the viewport
-  animateOnScroll1('origin-sub--heading', 'word');
+}
+
+// Attach the function to the scroll event
+window.addEventListener('scroll', () => {
+    animateOnScroll('origin-main--heading');
+    animateOnScroll('origin-sub--heading');
+    animateOnScroll('offer-1');
+    animateOnScroll('offer-2');
+    animateOnScroll('offer-3');
+    animateOnScroll('offer-4');
+    animateOnScroll('offer-5');
+    animateOnScroll('offer-6');
+    animateOnScroll('menu-main--heading');
+    animateOnScroll('menu-sub--heading');
+});
+
+// Call the function initially to animate elements already in the viewport
+animateOnScroll('origin-main--heading');
+animateOnScroll('origin-sub--heading');
+animateOnScroll('offer-1');
+animateOnScroll('offer-2');
+animateOnScroll('offer-3');
+animateOnScroll('offer-4');
+animateOnScroll('offer-5');
+animateOnScroll('offer-6');
+animateOnScroll('menu-main--heading');
+animateOnScroll('menu-sub--heading');

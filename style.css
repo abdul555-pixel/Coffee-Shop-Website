@@ -278,18 +278,15 @@ a{
     font-size: calc(45px + 3vw);
     font-family: 'Dancing Script', sans-serif;
     display: flex;
-    flex-wrap: wrap;
 }
 
 
-.origin-main--heading .char {
+.origin-main--heading {
     opacity: 0;
-    transform: translateX(10px);
-    transition: all 0.2s ease-in-out; /* Remove transition */
 }
 
-.origin-main--heading[data-scroll="in"] .char {
-    animation: slider-up 2s forwards;
+.origin-main--heading[data-scroll="in"] {
+    animation: slider-up 1s forwards;
 }
 
 @keyframes slider-up {
@@ -303,29 +300,26 @@ a{
     }
 }
 
-
 .origin-sub--heading{
     color: rgb(210, 187, 152);
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
     animation: all 1s ease-in-out;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .origin-sub--heading .word {
     opacity: 0;
-    transform: translateX(-100%);
-    transition: all 0.2s ease-in-out; /* Remove transition */
+    transform: translateX(10px);
 }
 
 .origin-sub--heading[data-scroll="in"] .word {
-    animation: slider 0.2s forwards;
+    animation: slider 1s forwards;
 }
 
 @keyframes slider {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-20px);
         opacity: 0;
     }
     to {
@@ -355,7 +349,52 @@ a{
     font-size: calc(45px + 3vw);
     font-family: 'dancing script', sans-serif;
     display: flex;
-    flex-wrap: wrap;
+}
+
+.offer-1,
+.offer-2,
+.offer-3,
+.offer-4,
+.offer-5,
+.offer-6 {
+    opacity: 0;
+    transform: translateX(-10px); /* Ensure transform is initially set */
+    transition: none; /* Remove transition to rely entirely on animation */
+}
+
+.offer-1[data-scroll="in"]{
+    animation: swipe-right 1s forwards; /* Apply animation when in viewport */
+}
+
+.offer-2[data-scroll="in"]{
+    animation: swipe-right 1s forwards; /* Apply animation when in viewport */
+}
+
+.offer-3[data-scroll="in"]{
+    animation: swipe-right 1s forwards; /* Apply animation when in viewport */
+}
+
+.offer-4[data-scroll="in"]{
+    animation: swipe-right 1s forwards; /* Apply animation when in viewport */
+}
+
+.offer-5[data-scroll="in"]{
+    animation: swipe-right 1s forwards; /* Apply animation when in viewport */
+}
+
+.offer-6[data-scroll="in"]{
+    animation: swipe-right 1s forwards; /* Apply animation when in viewport */
+}
+
+@keyframes swipe-right {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .offer-sub--heading{
@@ -407,7 +446,6 @@ a{
     height: 400px;
 }
 
-
 .menu-img{
     background-image: url(assets/bg-2.jpg);
     background-size: cover;
@@ -422,11 +460,36 @@ a{
     font-family: 'dancing script', sans-serif;
 }
 
+.menu-main--heading {
+    opacity: 0;
+}
+
+.menu-main--heading[data-scroll="in"] {
+    animation: slider-up 1s forwards;
+}
+
+@keyframes slider-up {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .menu-sub--heading{
     color: rgb(210, 187, 152);
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
+    opacity: 0;
 }
+
+.menu-sub--heading[data-scroll="in"] {
+    animation: slider 1s forwards;
+}
+
 
 .menu-headings{
     line-height: clamp(35px, 3vw, 85px);
