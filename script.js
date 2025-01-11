@@ -98,6 +98,14 @@ window.addEventListener('scroll', () => {
     animateOnScroll('offer-6');
     animateOnScroll('menu-main--heading');
     animateOnScroll('menu-sub--heading');
+    animateOnScroll('menu-things');
+    animateOnScroll('menu-things-2');
+    animateOnScroll('view-menu-1');
+    animateOnScroll('view-menu-2');
+    animateOnScroll('actual-review');
+    animateOnScroll('footer1-main--heading');
+    animateOnScroll('footer1-sub--heading');
+    animateOnScroll('timings');
 });
 
 // Call the function initially to animate elements already in the viewport
@@ -111,3 +119,11 @@ animateOnScroll('offer-5');
 animateOnScroll('offer-6');
 animateOnScroll('menu-main--heading');
 animateOnScroll('menu-sub--heading');
+animateOnScroll('menu-things');
+animateOnScroll('menu-things-2');
+animateOnScroll('view-menu-1');
+animateOnScroll('view-menu-2');
+animateOnScroll('actual-review');
+animateOnScroll('footer1-main--heading');
+animateOnScroll('footer1-sub--heading');
+animateOnScroll('timings');

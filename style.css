@@ -597,6 +597,32 @@ a{
     color: #209BA5;
 }
 
+.menu-things{
+    opacity: 0;
+}
+
+.menu-things[data-scroll="in"] {
+    animation: slider 1s forwards;
+}
+
+.menu-things-2{
+    opacity: 0;
+}
+
+.menu-things-2[data-scroll="in"]{
+    animation: slider-left 1s forwards;
+}
+
+@keyframes slider-left{
+    from{
+        transform: translateX(20px);
+        opacity: 0;
+    }to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .view-menu-1{
     display: flex;
     justify-content: start;
@@ -622,10 +648,38 @@ a{
     border-radius: 100px;
 }
 
+.view-menu-1{
+    opacity: 0;
+}
+
+.view-menu-1[data-scroll="in"]{
+    animation: slide-right 1s forwards;
+}
+
+.view-menu-2{
+    opacity: 0;
+}
+
+.view-menu-2[data-scroll="in"] {
+    animation: slide-left 1s forwards;
+}
+
+@keyframes slide-left{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .review-parent{
     display: grid;
     color: white;
     grid-template-columns: 5fr 5fr;
+    background-color: rgb(105 88 63);
 }
 
 
@@ -642,6 +696,11 @@ a{
     display: grid;
     place-items: center;
     height: 100%;
+    opacity: 0;
+}
+
+.actual-review[data-scroll="in"] {
+    animation: slider-left 1s forwards;
 }
 
 .review-main--heading{
@@ -730,12 +789,22 @@ a{
     color: #21A7B2;
     font-size: calc(45px + 3vw);
     font-family: 'dancing script', sans-serif;
+    opacity: 0;
+}
+
+.footer1-main--heading[data-scroll="in"] {
+    animation: slider-up 1s forwards;
 }
 
 .footer1-sub--heading{
     color: white;
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
+    opacity: 0;
+}
+
+.footer1-sub--heading[data-scroll="in"] {
+    animation: slider 1s forwards;
 }
 
 .footer1-headings{
@@ -750,6 +819,11 @@ a{
 .timings{
     text-align: center;
     margin: 0 20px;
+    opacity: 0;
+}
+
+.timings[data-scroll="in"] {
+    animation: slider-up 1s forwards;
 }
 
 .days{

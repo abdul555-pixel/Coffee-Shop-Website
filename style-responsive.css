@@ -69,6 +69,10 @@
     .offer--grid-12{
         grid-template-columns: 1fr;
     }
+    
+    .menu-headings{
+        padding: 15% 0;
+    }
 
     .menu-item1,
     .menu-item2,
@@ -331,6 +335,11 @@
 @media (min-width: 576px) {
     .origin-parent{
         max-width: 540px;
+    }
+}
+@media (max-width: 570px) {
+    .menu-headings{
+        padding: 20% 0;
     }
 }
 @media (min-width: 768px) {
