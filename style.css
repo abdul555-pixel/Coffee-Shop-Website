@@ -1,4 +1,4 @@
-body {
+ body {
     width: 100%;
     background-color: #18191B;
 }
@@ -160,11 +160,53 @@ a{
     font-family: 'dancing script', sans-serif;
 }
 
+.main--heading.words {
+    animation: slide-up 2s forwards;
+    animation-delay: calc(.5s + (-0.1s * var(--char-index)));
+    opacity: 0;
+}
+
+@keyframes slide-up{
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
 .sub--heading{
     color: rgb(210, 187, 152);
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
 }
+
+.sub--heading .words{
+    animation: none;
+}
+
+.sub--heading .char {
+    animation: slide-right 2s forwards;
+    animation-delay: calc(.5s + (-0.1s * var(--char-index)));
+    opacity: 0;
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-100%); /* Adjust to slide horizontally (right to left). */
+        opacity: 0;
+        padding-right: 10px;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+        padding-right: 0px;
+    }
+}
+
+
 
 .shop--description{
     color: white;
@@ -175,6 +217,12 @@ a{
     line-height: clamp(15px, 2vw, 50px);
     font-weight: 300;
     letter-spacing: 1.5px;
+}
+
+.shop--description.words{
+    animation: slide-up 2s forwards;
+    animation-delay: calc(.5s + (-.1s * var(--char-index)));
+    opacity: 0;
 }
 
 .menu--btn{
@@ -188,6 +236,11 @@ a{
     border: none;
     border-radius: 100px;
     z-index: 10;
+}
+
+.btn-1.words{
+    animation: slide-right 2s forwards;
+    animation-delay: calc(.5s + (-.1s * var(--char-index)));
 }
 
 .origin--grid{
@@ -223,15 +276,62 @@ a{
 .origin-main--heading{
     color: #21A7B2;
     font-size: calc(45px + 3vw);
-    font-family: 'dancing script', sans-serif;
-    animation: all 1s ease-in-out;
+    font-family: 'Dancing Script', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+
+.origin-main--heading .char {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.2s ease-in-out; /* Remove transition */
+}
+
+.origin-main--heading[data-scroll="in"] .char {
+    animation: slider-up 2s forwards;
+}
+
+@keyframes slider-up {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 .origin-sub--heading{
     color: rgb(210, 187, 152);
     font-family: 'plus jakarta sans';
     font-size: calc(20px + 1vw);
     animation: all 1s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.origin-sub--heading .word {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.2s ease-in-out; /* Remove transition */
+}
+
+.origin-sub--heading[data-scroll="in"] .word {
+    animation: slider 0.2s forwards;
+}
+
+@keyframes slider {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .origin--story{
@@ -254,6 +354,8 @@ a{
     color: #21A7B2;
     font-size: calc(45px + 3vw);
     font-family: 'dancing script', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .offer-sub--heading{
@@ -419,7 +521,7 @@ a{
 .menu-list-2 .menu-coffee {
     display: grid;
     grid-template-columns: 400px 90px 60px;
-    justify-content: end; /* Keep the coffee sizes aligned to the left */
+    justify-content: end;
     align-items: center;
     padding-top: 150px;
 }

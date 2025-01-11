@@ -22,477 +22,521 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="script.js" defer></script>
     <title>Brew Topia</title>
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scroll-out@2.2.2/dist/scroll-out.min.js"></script>
 </head>
 <body>
-    <div class="background-image">
-        <div class="slider-container">
-            <img src="assets/slide-1.jpg" alt="" class="slide">
-            <img src="assets/slide-2.jpg" alt="" class="slide" style="opacity: 0.3;">
-        </div>
-        <nav class="navbar" style="gap: 30px;">
-            <img src="assets/logo.png" alt="" class="logo">
-            <ul class="nav-menu">
-                <li>
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="menu.html" class="nav-link">Menu</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">Booking</a>
-                </li>
-                <li>
-                    <a href="about.html"nav-link">About</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">Blog</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+        <div class="background-image">
+            <div class="slider-container">
+                <img src="assets/slide-1.jpg" alt="" class="slide">
+                <img src="assets/slide-2.jpg" alt="" class="slide" style="opacity: 0.3;">
             </div>
-        </nav>
-        <div class="slider--content">
-            <div class="headings">
-                <h1 class="main--heading">
-                    The Perfect
-                </h1>
-                <h2 class="sub--heading">
-                    BLEND
-                </h2>
-            </div>
-            <p class="shop--description">
-                Crafted with care and precision, this blend represents the pinnacle of coffee craftsmenship, where artistry meets expertise to create a symphony of flavor.
-            </p>
-            <a class="menu--btn" href="menu.html">VIEW MENU</a>
-        </div>
-    </div>
-    <div class="origin--grid">
-        <div class="origin-grid--item1">
-            <div class="origin--headings">
-                <h1 class="origin-main--heading">Discover</h1>
-                <h2 class="origin-sub--heading">OUR STORY</h2>
-            </div>
-            <p class="origin--story">
-                In the heart of the bustling metropolis, where the rhythm of life pulses relentlessly, there exists a sanctuary hidden among the chaos—a place where time slows, and worries fade into the aroma of freshly ground coffee beans.
-            </p>
-        </div>
-        <div class="origin-grid--item2"></div>
-    </div>
-    <div class="offers">
-        <div class="offer--grid-1">
-            <div class="offer-grid--item1" style="background-image: url(assets/offerings-1.jpg); background-position: unset; background-repeat: no-repeat; background-size: cover;"></div>
-            <div class="offer-grid--item2">
-                <div class="offer--headings">
-                    <h1 class="offer-main--heading offer-1">Aromatic</h1>
-                    <h2 class="offer-sub--heading offer-1">TASTE</h2>
+            <nav class="navbar" style="gap: 30px;">
+                <img src="assets/logo.png" alt="" class="logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Booking</a>
+                    </li>
+                    <li>
+                        <a href="about.html"nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
-                <p class="offer--detail offer-1" 
-                style="color: white;
-                font-family: 'plus jakarta sans', sans-serif;
-                width: 75%;
-                font-size: clamp(12px, calc(4px + 0.7vw), 50px);
-                margin-bottom: 30px;
-                line-height: clamp(15px, 2vw, 50px);
-                font-weight: 300;
-                letter-spacing: 1.5px;">
+            </nav>
+            <div class="slider--content">
+                <div class="headings">
+                    <h1 class="main--heading" data-splitting>
+                        The Perfect
+                    </h1>
+                    <h2 class="sub--heading blend" data-splitting>
+                        BLEND
+                    </h2>
+                </div>
+                <p class="shop--description" data-splitting>
+                    Crafted with care and precision, this blend represents the pinnacle of coffee craftsmenship, where artistry meets expertise to create a symphony of flavor.
+                </p>
+                <div class="btn-1" data-splitting>
+                    <a class="menu--btn" href="menu.html">VIEW MENU</a>
+                </div>
+            </div>
+        </div>
+        <div class="origin--grid">
+            <div class="origin-grid--item1">
+                <div class="origin--headings">
+                    <h1 class="origin-main--heading">
+                        <span class="char">D</span>
+                        <span class="char">i</span>
+                        <span class="char">s</span>
+                        <span class="char">c</span>
+                        <span class="char">o</span>
+                        <span class="char">v</span>
+                        <span class="char">e</span>
+                        <span class="char">r</span>
+                    </h1>
+                    <h2 class="origin-sub--heading">
+                        <span class="word">O</span>
+                        <span class="word">U</span>
+                        <span class="word">R</span>
+                        <span class="word">&nbsp;</span>
+                        <span class="word">S</span>
+                        <span class="word">T</span>
+                        <span class="word">O</span>
+                        <span class="word">R</span>
+                        <span class="word">Y</span>
+                      </h2>
+                </div>
+                <p class="origin--story">
                     In the heart of the bustling metropolis, where the rhythm of life pulses relentlessly, there exists a sanctuary hidden among the chaos—a place where time slows, and worries fade into the aroma of freshly ground coffee beans.
                 </p>
             </div>
+            <div class="origin-grid--item2"></div>
         </div>
-        <div class="offer--grid-2">  
-            <div class="offer-grid--item3">
-                <div class="offer--headings">
-                    <h1 class="offer-main--heading offer-2">Delicious</h1>
-                    <h2 class="offer-sub--heading offer-2">FOODS</h2>
-                </div>
-                <p class="offer--detail offer-2"
-                style="color: white;
-                font-family: 'plus jakarta sans', sans-serif;
-                width: 75%;
-                font-size: clamp(12px, calc(4px + 0.7vw), 50px);
-                margin-bottom: 30px;
-                line-height: clamp(15px, 2vw, 50px);
-                font-weight: 300;
-                letter-spacing: 1.5px;">
-                    In the heart of the bustling metropolis, where the rhythm of life pulses relentlessly, there exists a sanctuary hidden among the chaos—a place where time slows, and worries fade into the aroma of freshly ground coffee beans.
-                </p>
-            </div>
-            <div class="offer-grid--item4" style="background-image: url(assets/offerings-2.jpg); background-repeat: no-repeat; background-size: cover;"></div>
-        </div>
-        <div class="offer--grid-1">
-            <div class="offer-grid--item5" style="background-image: url(assets/offerings-3.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;"></div> 
-            <div class="offer-grid--item6">
-                <div class="offer--headings">
-                    <h1 class="offer-main--heading offer-3">Read</h1>
-                    <h2 class="offer-sub--heading offer-3">Books</h2>
-                </div>
-                <p class="offer--detail offer-3"
-                style="color: white;
-                font-family: 'plus jakarta sans', sans-serif;
-                width: 75%;
-                font-size: clamp(12px, calc(4px + 0.7vw), 50px);
-                margin-bottom: 30px;
-                line-height: clamp(15px, 2vw, 50px);
-                font-weight: 300;
-                letter-spacing: 1.5px;">
-                    Cozy up with a cup of coffee and explore our curated collection of books for the perfect reading escape!
-                </p>
-            </div>
-        </div>
-        <div class="offer--grid-2">  
-            <div class="offer-grid--item7">
-                <div class="offer--headings">
-                    <h1 class="offer-main--heading offer-4">Coffee</h1>
-                    <h2 class="offer-sub--heading offer-4">ART GALLERY</h2>
-                </div>
-                <p class="offer--detail offer-4"
-                style="color: white;
-                font-family: 'plus jakarta sans', sans-serif;
-                width: 75%;
-                font-size: clamp(12px, calc(4px + 0.7vw), 50px);
-                margin-bottom: 30px;
-                line-height: clamp(15px, 2vw, 50px);
-                font-weight: 300;
-                letter-spacing: 1.5px;">
-                    Immerse yourself in the artistry of coffee with our stunning coffee art gallery, where creativity meets flavor.
-                </p>
-            </div>
-            <div class="offer-grid--item8" style="background-image: url(assets/offerings-4.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
-        </div>
-        <div class="offer--grid-1">
-            <div class="offer-grid--item9" style="background-image: url(assets/offerings-5.jpg); background-repeat: no-repeat; background-size: cover;background-position: bottom;"></div> 
-            <div class="offer-grid--item10">
-                <div class="offer--headings">
-                    <h1 class="offer-main--heading offer-5">Customized</h1>
-                    <h2 class="offer-sub--heading offer-5">CUPS</h2>
-                </div>
-                <p class="offer--detail offer-5"
-                style="color: white;
-                font-family: 'plus jakarta sans', sans-serif;
-                width: 75%;
-                font-size: clamp(12px, calc(4px + 0.7vw), 50px);
-                margin-bottom: 30px;
-                line-height: clamp(15px, 2vw, 50px);
-                font-weight: 300;
-                letter-spacing: 1.5px;">
-                    Personalize your coffee experience with custom-designed cups, crafted just for you!
-                </p>
-            </div>
-        </div>
-        <div class="offer--grid-2">  
-            <div class="offer-grid--item11">
-                <div class="offer--headings">
-                    <h1 class="offer-main--heading offer-6">MOOD</h1>
-                    <h2 class="offer-sub--heading offer-6">BASED COFFEE<br>SUGGESTIONS</h2>
-                </div>
-                <p class="offer--detail offer-6"
-                style="color: white;
-                font-family: 'plus jakarta sans', sans-serif;
-                width: 75%;
-                font-size: clamp(12px, calc(4px + 0.7vw), 50px);
-                margin-bottom: 30px;
-                line-height: clamp(15px, 2vw, 50px);
-                font-weight: 300;
-                letter-spacing: 1.5px;">
-                    Personalized coffee suggestions tailored to match your mood—experience the perfect brew for every feeling!
-                </p>
-            </div>
-            <div class="offer-grid--item12" style="background-image: url(assets/offerings-6.jpg); background-repeat: no-repeat; background-size: cover;background-position: center;"></div>
-        </div>
-    </div>
-    <div class="menu-img">
-        <div class="menu-headings">
-            <h1 class="menu-main--heading menu-animation">Choose</h1>
-            <h2 class="menu-sub--heading menu-animation"> WHAT YOU WANT</h2>
-        </div>
-    </div>
-    <div class="parent-container">
-        <div class="menu-list-1">
-            <div class="menu-coffee menu-things">
-                <div class="menu-espresso menu-things" style="font-size: 38px; font-family: 'Dancing script'; color: #21A7B2;">espresso</div>
-                <div class="coffee-sizes">
-                    <div class="medium-coffee menu-things" style="font-family: 'oswald', sans-serif;">Medium<br><span style="font-size: 16px; color: #21A7B2; ">16oz</span></div>
-                    <div class="large-coffee menu-things" style="font-family: 'oswald', sans-serif;">Large<br><span style="font-size: 16px; color: #21A7B2;">20oz</span></div>
+        <div class="offers">
+            <div class="offer--grid-1">
+                <div class="offer-grid--item1" style="background-image: url(assets/offerings-1.jpg); background-position: unset; background-repeat: no-repeat; background-size: cover;"></div>
+                <div class="offer-grid--item2">
+                    <div class="offer--headings">
+                        <h1 class="offer-main--heading offer-1">
+                            <span class="char-1">A</span>
+                            <span class="char-1">r</span>
+                            <span class="char-1">o</span>
+                            <span class="char-1">m</span>
+                            <span class="char-1">a</span>
+                            <span class="char-1">t</span>
+                            <span class="char-1">i</span>
+                            <span class="char-1">c</span>
+                        </h1>
+                        <h2 class="offer-sub--heading offer-1">
+                            <span class="word-1">T</span>
+                            <span class="word-1">A</span>
+                            <span class="word-1">S</span>
+                            <span class="word-1">T</span>
+                            <span class="word-1">E</span>
+                        </h2>
+                    </div>
+                    <p class="offer--detail offer-1" 
+                    style="color: white;
+                    font-family: 'plus jakarta sans', sans-serif;
+                    width: 75%;
+                    font-size: clamp(12px, calc(4px + 0.7vw), 50px);
+                    margin-bottom: 30px;
+                    line-height: clamp(15px, 2vw, 50px);
+                    font-weight: 300;
+                    letter-spacing: 1.5px;">
+                        In the heart of the bustling metropolis, where the rhythm of life pulses relentlessly, there exists a sanctuary hidden among the chaos—a place where time slows, and worries fade into the aroma of freshly ground coffee beans.
+                    </p>
                 </div>
             </div>
-            <div class="menu-item1 menu-things">
-                <div class="coffee-name menu-things">
-                    Espresso<br>
-                    <span>Espresso, where passion meets perfection.</span>
+            <div class="offer--grid-2">  
+                <div class="offer-grid--item3">
+                    <div class="offer--headings">
+                        <h1 class="offer-main--heading offer-2">Delicious</h1>
+                        <h2 class="offer-sub--heading offer-2">FOODS</h2>
+                    </div>
+                    <p class="offer--detail offer-2"
+                    style="color: white;
+                    font-family: 'plus jakarta sans', sans-serif;
+                    width: 75%;
+                    font-size: clamp(12px, calc(4px + 0.7vw), 50px);
+                    margin-bottom: 30px;
+                    line-height: clamp(15px, 2vw, 50px);
+                    font-weight: 300;
+                    letter-spacing: 1.5px;">
+                        In the heart of the bustling metropolis, where the rhythm of life pulses relentlessly, there exists a sanctuary hidden among the chaos—a place where time slows, and worries fade into the aroma of freshly ground coffee beans.
+                    </p>
                 </div>
-                <div class="medium-price menu-things">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things">
-                    <span>Large - </span>
-                    2.20
+                <div class="offer-grid--item4" style="background-image: url(assets/offerings-2.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+            </div>
+            <div class="offer--grid-1">
+                <div class="offer-grid--item5" style="background-image: url(assets/offerings-3.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;"></div> 
+                <div class="offer-grid--item6">
+                    <div class="offer--headings">
+                        <h1 class="offer-main--heading offer-3">Read</h1>
+                        <h2 class="offer-sub--heading offer-3">Books</h2>
+                    </div>
+                    <p class="offer--detail offer-3"
+                    style="color: white;
+                    font-family: 'plus jakarta sans', sans-serif;
+                    width: 75%;
+                    font-size: clamp(12px, calc(4px + 0.7vw), 50px);
+                    margin-bottom: 30px;
+                    line-height: clamp(15px, 2vw, 50px);
+                    font-weight: 300;
+                    letter-spacing: 1.5px;">
+                        Cozy up with a cup of coffee and explore our curated collection of books for the perfect reading escape!
+                    </p>
                 </div>
             </div>
-            <div class="menu-item2 menu-things">
-                <div class="coffee-name menu-things">
-                    Mocchiato<br>
-                    <span>The perfect harmony of espresso and sweetness</span>
+            <div class="offer--grid-2">  
+                <div class="offer-grid--item7">
+                    <div class="offer--headings">
+                        <h1 class="offer-main--heading offer-4">Coffee</h1>
+                        <h2 class="offer-sub--heading offer-4">ART GALLERY</h2>
+                    </div>
+                    <p class="offer--detail offer-4"
+                    style="color: white;
+                    font-family: 'plus jakarta sans', sans-serif;
+                    width: 75%;
+                    font-size: clamp(12px, calc(4px + 0.7vw), 50px);
+                    margin-bottom: 30px;
+                    line-height: clamp(15px, 2vw, 50px);
+                    font-weight: 300;
+                    letter-spacing: 1.5px;">
+                        Immerse yourself in the artistry of coffee with our stunning coffee art gallery, where creativity meets flavor.
+                    </p>
                 </div>
-                <div class="medium-price menu-things">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things">
-                    <span>Large - </span>
-                    2.20
+                <div class="offer-grid--item8" style="background-image: url(assets/offerings-4.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;"></div>
+            </div>
+            <div class="offer--grid-1">
+                <div class="offer-grid--item9" style="background-image: url(assets/offerings-5.jpg); background-repeat: no-repeat; background-size: cover;background-position: bottom;"></div> 
+                <div class="offer-grid--item10">
+                    <div class="offer--headings">
+                        <h1 class="offer-main--heading offer-5">Customized</h1>
+                        <h2 class="offer-sub--heading offer-5">CUPS</h2>
+                    </div>
+                    <p class="offer--detail offer-5"
+                    style="color: white;
+                    font-family: 'plus jakarta sans', sans-serif;
+                    width: 75%;
+                    font-size: clamp(12px, calc(4px + 0.7vw), 50px);
+                    margin-bottom: 30px;
+                    line-height: clamp(15px, 2vw, 50px);
+                    font-weight: 300;
+                    letter-spacing: 1.5px;">
+                        Personalize your coffee experience with custom-designed cups, crafted just for you!
+                    </p>
                 </div>
             </div>
-            <div class="menu-item3 menu-things">
-                <div class="coffee-name menu-things">
-                    Classic Cappucino<br>
-                    <span>A timeless delight brewed just for you.</span>
+            <div class="offer--grid-2">  
+                <div class="offer-grid--item11">
+                    <div class="offer--headings">
+                        <h1 class="offer-main--heading offer-6">MOOD</h1>
+                        <h2 class="offer-sub--heading offer-6">BASED COFFEE<br>SUGGESTIONS</h2>
+                    </div>
+                    <p class="offer--detail offer-6"
+                    style="color: white;
+                    font-family: 'plus jakarta sans', sans-serif;
+                    width: 75%;
+                    font-size: clamp(12px, calc(4px + 0.7vw), 50px);
+                    margin-bottom: 30px;
+                    line-height: clamp(15px, 2vw, 50px);
+                    font-weight: 300;
+                    letter-spacing: 1.5px;">
+                        Personalized coffee suggestions tailored to match your mood—experience the perfect brew for every feeling!
+                    </p>
                 </div>
-                <div class="medium-price menu-things">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="menu-item4 menu-things">
-                <div class="coffee-name menu-things">
-                    Cappucino<br>
-                    <span>Where rich espresso meets frothy perfection.</span>
-                </div>
-                <div class="medium-price menu-things">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="menu-item5 menu-things">
-                <div class="coffee-name menu-things">
-                    Mocha Latte<br>
-                    <span>The perfect blend of chocolate and espresso.</span>
-                </div>
-                <div class="medium-price menu-things">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="menu-item6 menu-things">
-                <div class="coffee-name menu-things">
-                    Caramel Latte<br>
-                    <span>Where smooth espresso meets golden caramel bliss.</span>
-                </div>
-                <div class="medium-price menu-things">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="menu-item7 menu-things">
-                <div class="coffee-name menu-things">
-                    Cafe Americano<br>
-                    <span>The essence of pure coffee bliss.</span>
-                </div>
-                <div class="medium-price menu-things">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="view-menu-1" id="view-menu" href="menu.html">
-                <a href="menu.html">View All Menu</a>
+                <div class="offer-grid--item12" style="background-image: url(assets/offerings-6.jpg); background-repeat: no-repeat; background-size: cover;background-position: center;"></div>
             </div>
         </div>
-        <div class="menu-list-2">
-            <div class="menu-coffee menu-things-2">
-                <div class="menu-espresso menu-things-2" style="font-size: 38px; font-family: 'Dancing script'; color: #21A7B2;">espresso</div>
-                <div class="coffee-sizes menu-things-2">
-                    <div class="medium-coffee menu-things-2" style="font-family: 'oswald', sans-serif;">Medium<br><span style="font-size: 16px; color: #21A7B2; ">16oz</span></div>
-                    <div class="large-coffee menu-things-2" style="font-family: 'oswald', sans-serif;">Large<br><span style="font-size: 16px; color: #21A7B2;">20oz</span></div>
-                </div>
-            </div>
-            <div class="menu-item1 menu-things-2">
-                <div class="coffee-name menu-things-2">
-                    Espresso<br>
-                    <span>Espresso, where passion meets perfection.</span>
-                </div>
-                <div class="medium-price menu-things-2">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things-2">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="menu-item2 menu-things-2">
-                <div class="coffee-name menu-things-2">
-                    Mocchiato<br>
-                    <span>The perfect harmony of espresso and sweetness</span>
-                </div>
-                <div class="medium-price menu-things-2">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things-2">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="menu-item3 menu-things-2">
-                <div class="coffee-name menu-things-2">
-                    Classic Cappucino<br>
-                    <span>A timeless delight brewed just for you.</span>
-                </div>
-                <div class="medium-price menu-things-2">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things-2">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="menu-item4 menu-things-2">
-                <div class="coffee-name menu-things-2">
-                    Cappucino<br>
-                    <span>Where rich espresso meets frothy perfection.</span>
-                </div>
-                <div class="medium-price menu-things-2">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things-2">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="menu-item5 menu-things-2">
-                <div class="coffee-name menu-things-2">
-                    Mocha Latte<br>
-                    <span>The perfect blend of chocolate and espresso.</span>
-                </div>
-                <div class="medium-price menu-things-2">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things-2">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="menu-item6 menu-things-2">
-                <div class="coffee-name menu-things-2">
-                    Caramel Latte<br>
-                    <span>Where smooth espresso meets golden caramel bliss.</span>
-                </div>
-                <div class="medium-price menu-things-2">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things-2">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="menu-item7 menu-things-2">
-                <div class="coffee-name menu-things-2">
-                    Cafe Americano<br>
-                    <span>The essence of pure coffee bliss.</span>
-                </div>
-                <div class="medium-price menu-things-2">
-                    <span>Medium - </span>
-                    1.75
-                </div>
-                <div class="large-price menu-things-2">
-                    <span>Large - </span>
-                    2.20
-                </div>
-            </div>
-            <div class="view-menu-2" id="view-menu" href="menu.html">
-                <a href="menu.html">View All Menu</a>
+        <div class="menu-img">
+            <div class="menu-headings">
+                <h1 class="menu-main--heading menu-animation">Choose</h1>
+                <h2 class="menu-sub--heading menu-animation"> WHAT YOU WANT</h2>
             </div>
         </div>
-    </div>
-    <div class="review-parent">
-        <div class="review-img"></div>
-        <div class="actual-review">
-            <div class="review-headings">
-                <div class="review-main--heading review-animation">Customer</div>
-                <div class="review-sub--heading review-animation" style="font-weight: 600;">REVIEW</div>
+        <div class="parent-container">
+            <div class="menu-list-1">
+                <div class="menu-coffee menu-things">
+                    <div class="menu-espresso menu-things" style="font-size: 38px; font-family: 'Dancing script'; color: #21A7B2;">espresso</div>
+                    <div class="coffee-sizes">
+                        <div class="medium-coffee menu-things" style="font-family: 'oswald', sans-serif;">Medium<br><span style="font-size: 16px; color: #21A7B2; ">16oz</span></div>
+                        <div class="large-coffee menu-things" style="font-family: 'oswald', sans-serif;">Large<br><span style="font-size: 16px; color: #21A7B2;">20oz</span></div>
+                    </div>
+                </div>
+                <div class="menu-item1 menu-things">
+                    <div class="coffee-name menu-things">
+                        Espresso<br>
+                        <span>Espresso, where passion meets perfection.</span>
+                    </div>
+                    <div class="medium-price menu-things">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item2 menu-things">
+                    <div class="coffee-name menu-things">
+                        Mocchiato<br>
+                        <span>The perfect harmony of espresso and sweetness</span>
+                    </div>
+                    <div class="medium-price menu-things">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item3 menu-things">
+                    <div class="coffee-name menu-things">
+                        Classic Cappucino<br>
+                        <span>A timeless delight brewed just for you.</span>
+                    </div>
+                    <div class="medium-price menu-things">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item4 menu-things">
+                    <div class="coffee-name menu-things">
+                        Cappucino<br>
+                        <span>Where rich espresso meets frothy perfection.</span>
+                    </div>
+                    <div class="medium-price menu-things">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item5 menu-things">
+                    <div class="coffee-name menu-things">
+                        Mocha Latte<br>
+                        <span>The perfect blend of chocolate and espresso.</span>
+                    </div>
+                    <div class="medium-price menu-things">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item6 menu-things">
+                    <div class="coffee-name menu-things">
+                        Caramel Latte<br>
+                        <span>Where smooth espresso meets golden caramel bliss.</span>
+                    </div>
+                    <div class="medium-price menu-things">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item7 menu-things">
+                    <div class="coffee-name menu-things">
+                        Cafe Americano<br>
+                        <span>The essence of pure coffee bliss.</span>
+                    </div>
+                    <div class="medium-price menu-things">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="view-menu-1" id="view-menu" href="menu.html">
+                    <a href="menu.html">View All Menu</a>
+                </div>
             </div>
-            <div class="review-detail review-animation">
-                As a busy professional, I rely on my morning coffee to kickstart my day. The rich, smooth taste and heavenly aroma never fail to perk me up and get me ready to tackle whatever the day throws at me. It's like a little slice of heaven in a cup!
+            <div class="menu-list-2">
+                <div class="menu-coffee menu-things-2">
+                    <div class="menu-espresso menu-things-2" style="font-size: 38px; font-family: 'Dancing script'; color: #21A7B2;">espresso</div>
+                    <div class="coffee-sizes menu-things-2">
+                        <div class="medium-coffee menu-things-2" style="font-family: 'oswald', sans-serif;">Medium<br><span style="font-size: 16px; color: #21A7B2; ">16oz</span></div>
+                        <div class="large-coffee menu-things-2" style="font-family: 'oswald', sans-serif;">Large<br><span style="font-size: 16px; color: #21A7B2;">20oz</span></div>
+                    </div>
+                </div>
+                <div class="menu-item1 menu-things-2">
+                    <div class="coffee-name menu-things-2">
+                        Espresso<br>
+                        <span>Espresso, where passion meets perfection.</span>
+                    </div>
+                    <div class="medium-price menu-things-2">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things-2">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item2 menu-things-2">
+                    <div class="coffee-name menu-things-2">
+                        Mocchiato<br>
+                        <span>The perfect harmony of espresso and sweetness</span>
+                    </div>
+                    <div class="medium-price menu-things-2">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things-2">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item3 menu-things-2">
+                    <div class="coffee-name menu-things-2">
+                        Classic Cappucino<br>
+                        <span>A timeless delight brewed just for you.</span>
+                    </div>
+                    <div class="medium-price menu-things-2">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things-2">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item4 menu-things-2">
+                    <div class="coffee-name menu-things-2">
+                        Cappucino<br>
+                        <span>Where rich espresso meets frothy perfection.</span>
+                    </div>
+                    <div class="medium-price menu-things-2">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things-2">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item5 menu-things-2">
+                    <div class="coffee-name menu-things-2">
+                        Mocha Latte<br>
+                        <span>The perfect blend of chocolate and espresso.</span>
+                    </div>
+                    <div class="medium-price menu-things-2">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things-2">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item6 menu-things-2">
+                    <div class="coffee-name menu-things-2">
+                        Caramel Latte<br>
+                        <span>Where smooth espresso meets golden caramel bliss.</span>
+                    </div>
+                    <div class="medium-price menu-things-2">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things-2">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="menu-item7 menu-things-2">
+                    <div class="coffee-name menu-things-2">
+                        Cafe Americano<br>
+                        <span>The essence of pure coffee bliss.</span>
+                    </div>
+                    <div class="medium-price menu-things-2">
+                        <span>Medium - </span>
+                        1.75
+                    </div>
+                    <div class="large-price menu-things-2">
+                        <span>Large - </span>
+                        2.20
+                    </div>
+                </div>
+                <div class="view-menu-2" id="view-menu" href="menu.html">
+                    <a href="menu.html">View All Menu</a>
+                </div>
             </div>
-            <div class="reviewer-name review-animation" style="font-family: 'oswald'; padding-bottom: 20px;">Jenna Smith</div>
         </div>
-    </div>
-    <div class="contact-number" style="color: white;">
-        <div class="right-side">
-            <p><i class="fa-solid fa-phone" style="color: #21A7B2;"></i>Call us now and get special offers!</p>
-        </div>
-        <div class="left-side">
-            <button>Call Us Now</button>
-        </div>
-    </div>
-    <div class="footer-1">
-        <div class="footer1-headings">
-            <h1 class="footer1-main--heading">EnjoyYourself</h1>
-            <h2 class="footer1-sub--heading">AT</h2>
-            <h1 class="footer1-main--heading">BrewTopia</h1>
-        </div>
-        <div class="cafe-timings" style="display: flex; margin: 100px 0 0 0; padding-bottom: 80px; justify-content: center; gap: 100px; flex-wrap: wrap;">
-            <div class="timings">
-                <p class="days">Mon-Tue</p>
-                <p class="hours">9:30AM-11:00PM</p>
-            </div>
-            <div class="timings">
-                <p class="days">Friday</p>
-                <p class="hours">9:30AM-11:00PM</p>
-            </div>
-            <div class="timings">
-                <p class="days">Sat-Sun</p>
-                <p class="hours">9:30AM-11:00PM</p>
+        <div class="review-parent">
+            <div class="review-img"></div>
+            <div class="actual-review">
+                <div class="review-headings">
+                    <div class="review-main--heading review-animation">Customer</div>
+                    <div class="review-sub--heading review-animation" style="font-weight: 600;">REVIEW</div>
+                </div>
+                <div class="review-detail review-animation">
+                    As a busy professional, I rely on my morning coffee to kickstart my day. The rich, smooth taste and heavenly aroma never fail to perk me up and get me ready to tackle whatever the day throws at me. It's like a little slice of heaven in a cup!
+                </div>
+                <div class="reviewer-name review-animation" style="font-family: 'oswald'; padding-bottom: 20px;">Jenna Smith</div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <div class="address" >
-            <p style="font-family: 'plus jakarta sans', sans-serif; font-weight: 600;">Our Location</p>
-            <p style="font-family: 'plus jakarta sans', sans-serif; font-size: clamp(8px, calc(10px + 0.2vw), 12px); font-weight: 300; margin-top: 5px;">Lalu Khet Das Number, Gali No. 420
-            <br>T.(208)090078601
-            <br style="width: 100%;">shahoodkhan@gmail.com
+        <div class="contact-number" style="color: white;">
+            <div class="right-side">
+                <p><i class="fa-solid fa-phone" style="color: #21A7B2;"></i>Call us now and get special offers!</p>
+            </div>
+            <div class="left-side">
+                <button>Call Us Now</button>
+            </div>
         </div>
-        <div class="footer-logo" >
-            <img src="assets/logo.png" style="width: 50%;">
+        <div class="footer-1">
+            <div class="footer1-headings">
+                <h1 class="footer1-main--heading">EnjoyYourself</h1>
+                <h2 class="footer1-sub--heading">AT</h2>
+                <h1 class="footer1-main--heading">BrewTopia</h1>
+            </div>
+            <div class="cafe-timings" style="display: flex; margin: 100px 0 0 0; padding-bottom: 80px; justify-content: center; gap: 100px; flex-wrap: wrap;">
+                <div class="timings">
+                    <p class="days">Mon-Tue</p>
+                    <p class="hours">9:30AM-11:00PM</p>
+                </div>
+                <div class="timings">
+                    <p class="days">Friday</p>
+                    <p class="hours">9:30AM-11:00PM</p>
+                </div>
+                <div class="timings">
+                    <p class="days">Sat-Sun</p>
+                    <p class="hours">9:30AM-11:00PM</p>
+                </div>
+            </div>
         </div>
-        <div class="socialmedia--icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-solid fa-wifi"></i>
-            <i class="fa-brands fa-google"></i>
-            <i class="fa-brands fa-skype" style="margin-right: 0px;"></i>
+        <div class="footer">
+            <div class="address" >
+                <p style="font-family: 'plus jakarta sans', sans-serif; font-weight: 600;">Our Location</p>
+                <p style="font-family: 'plus jakarta sans', sans-serif; font-size: clamp(8px, calc(10px + 0.2vw), 12px); font-weight: 300; margin-top: 5px;">Lalu Khet Das Number, Gali No. 420
+                <br>T.(208)090078601
+                <br style="width: 100%;">shahoodkhan@gmail.com
+            </div>
+            <div class="footer-logo" >
+                <img src="assets/logo.png" style="width: 50%;">
+            </div>
+            <div class="socialmedia--icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-skype" style="margin-right: 0px;"></i>
+            </div>
         </div>
-    </div>
+        <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script>
+        Splitting();
+    </script>
 </body>
 </html>

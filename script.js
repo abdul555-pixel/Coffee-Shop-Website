@@ -70,167 +70,63 @@ menuItems.forEach(
     }
   )
 
-
-anime.timeline()
-  .add({
-    targets: '.main--heading',
-    translateY: [40,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 100 + 50 * i
-  });
-
-anime.timeline()
-  .add({
-    targets: '.sub--heading',
-    translateY: [70,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 100 + 50 * i
-  });
-
-// Animate the menu button as a whole
-anime.timeline()
-  .add({
-    targets: '.menu--btn',
-    translateY: [70, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 3000, // Adjust duration as needed
-  });
-
-// Animate the shop description as a whole
-anime.timeline()
-  .add({
-    targets: '.shop--description',
-    translateY: [50, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 3000, // Adjust duration as needed
-  });
-
-// Function to animate elements when they appear in the viewport
-function animateOnScroll(target, animation) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            anime.timeline().add(animation);
-            observer.unobserve(entry.target); // Stop observing once the animation is triggered
-          }
-        });
-      },
-      { threshold: 0.5 } // Adjust visibility threshold as needed
-    );
   
-    observer.observe(document.querySelector(target));
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top >= 0 && rect.bottom <= window.innerHeight;
   }
   
-// Animation for origin-main--heading
-animateOnScroll('.origin-main--heading', {
-targets: '.origin-main--heading',
-translateY: [50, 0],
-opacity: [0, 1],
-easing: "easeOutExpo",
-duration: 3000,
-});
-
-// Animation for origin-sub--heading
-animateOnScroll('.origin-sub--heading', {
-targets: '.origin-sub--heading',
-translateY: [50, 0],
-opacity: [0, 1],
-easing: "easeOutExpo",
-duration: 4000,
-});
+  // Function to animate elements when they are in the viewport
+  function animateOnScroll() {
+    const headings = document.querySelectorAll('.origin-main--heading');
+  
+    headings.forEach((heading) => {
+      if (isInViewport(heading) && !heading.hasAttribute('data-scroll')) {
+        heading.setAttribute('data-scroll', 'in');
+        
+        const chars = heading.querySelectorAll('.char');
+        chars.forEach((char, index) => {
+          chars.style.animationDelay = `${0.5 + (-0.1 * index)}s`;
+        });
+      }
+    });
+  }
+  
+  // Attach the function to the scroll event
+  window.addEventListener('scroll', animateOnScroll);
+  
+  // Call the function initially to animate elements already in the viewport
+  animateOnScroll();
   
 
-animateOnScroll('.offer-1',{
-targets: '.offer-1',
-translateY: [50, 0],
-opacity: [0, 1],
-easing: "easeOutExpo",
-duration: 3000, // Adjust duration as needed
-});
 
-animateOnScroll('.offer-2',{
-    targets: '.offer-2',
-    translateY: [50, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 3000, // Adjust duration as needed
+// Function to check if an element is in the viewport
+function isInViewport1(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top >= 0 && rect.bottom <= window.innerHeight;
+  }
+  
+  // Reusable function to animate elements
+  function animateOnScroll1(targetClass, itemClass) {
+    const elements = document.querySelectorAll(`.${targetClass}`);
+  
+    elements.forEach((element) => {
+      if (isInViewport1(element) && !element.hasAttribute('data-scroll')) {
+        element.setAttribute('data-scroll', 'in');
+  
+        const items = element.querySelectorAll(`.${itemClass}`);
+        items.forEach((item, index) => {
+          item.style.animationDelay = `${0.5 + (-0.1 * index)}s`;
+        });
+      }
     });
-
-animateOnScroll('.offer-3',{
-    targets: '.offer-3',
-    translateY: [50, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 3000, // Adjust duration as needed
-    });
-animateOnScroll('.offer-4',{
-    targets: '.offer-4',
-    translateY: [50, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 3000, // Adjust duration as needed
-    });
-
-animateOnScroll('.offer-5',{
-    targets: '.offer-5',
-    translateY: [50, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 3000// Adjust duration as needed
-    });
-
-animateOnScroll('.offer-6',{
-    targets: '.offer-6',
-    translateY: [50, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 3000 // Adjust duration as needed
-    });
-animateOnScroll('.menu-animation',{
-    targets: '.menu-animation',
-    translateY: [0, -20],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 1200
-});
-
-animateOnScroll('.menu-things',{
-    targets: '.menu-things',
-    translateX: [0, 10],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 1200
-});
-
-animateOnScroll('.menu-things-2',{
-    targets: '.menu-things-2',
-    translateX: [10, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 1200
-});
-
-animateOnScroll('.review-animation',{
-    targets: '.review-animation',
-    translateX: [50, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 3000 // Adjust duration as needed
-});
-
-animateOnScroll('#view-menu',{
-    targets: '.view-menu-1',
-    translateX: [10, 0],
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 3000 // Adjust duration as needed
-});
+  }
+  
+  // Attach the function to the scroll event and make it reusable
+  window.addEventListener('scroll', () => {
+    animateOnScroll1('origin-sub--heading', 'word');
+  });
+  
+  // Call the function initially to animate elements already in the viewport
+  animateOnScroll1('origin-sub--heading', 'word');
