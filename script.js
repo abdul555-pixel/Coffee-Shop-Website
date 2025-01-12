@@ -127,3 +127,44 @@ animateOnScroll('actual-review');
 animateOnScroll('footer1-main--heading');
 animateOnScroll('footer1-sub--heading');
 animateOnScroll('timings');
+
+
+document.querySelectorAll('a[href^="contact"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetElement = document.querySelector('.actual-review');
+
+        const navHeight = document.querySelector('.navbar').offsetHeight;
+        const targetPosition = targetElement.offsetTop - navHeight;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+
+const navappear = () => {
+    const navBar = document.querySelector('.navbar');
+    const navLogo = document.querySelector('.logo');
+    const navHeight = 10; // Scroll threshold for the navbar to appear
+
+    if (!navBar) {
+        console.warn('Navbar element not found');
+        return;
+    }
+
+    if (window.scrollY > navHeight) {
+        // Add the 'scrolled' class when the user scrolls past the threshold
+        navBar.classList.add('scrolled');
+        navLogo.classList.add('shrink');
+    } else {
+        // Remove the 'scrolled' class when at the top
+        navBar.classList.remove('scrolled');
+        navLogo.classList.remove('shrink');
+    }
+};
+
+// Attach the scroll event listener to the window
+window.addEventListener('scroll', navappear);

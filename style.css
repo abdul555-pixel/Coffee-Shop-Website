@@ -18,6 +18,7 @@
     height: 100vh;
     position: absolute;
     overflow: hidden;
+    top: 0;
 }
 
 .slide{
@@ -37,8 +38,12 @@ a{
 
 .logo{
     width: 10%;
+    transition: width 0.5s ease;
 }
 
+.logo.shrink {
+    width: 6%; /* Shrink logo when scrolling */
+}
 
 .nav-link:hover{
     color: #1aa4ae;
@@ -48,9 +53,28 @@ a{
 }
 .navbar{
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    top: 0;
+    z-index: 20;
+    gap: 30px;
+    z-index: 1000;
+    background: transparent;
+    transition: background 0.5s ease, transform 0.3s ease;
 }
+
+.navbar {
+    transition: background-color 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background: #0E464A; /* Background color when scrolling */
+    transform: translateY(0); /* Smooth transition when appearing */
+    padding: 10px 0;
+}
+
 .nav-menu{
     display: flex;
     list-style: none;
@@ -138,14 +162,14 @@ a{
 .slider--content{
     display: flex;
     flex-direction: column;
-    padding-bottom: 10%;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 .slider--content{
-    margin-top: 2%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .headings{
@@ -653,7 +677,7 @@ a{
 }
 
 .view-menu-1[data-scroll="in"]{
-    animation: slide-right 1s forwards;
+    animation: slide-right 0.5s forwards;
 }
 
 .view-menu-2{
@@ -661,7 +685,7 @@ a{
 }
 
 .view-menu-2[data-scroll="in"] {
-    animation: slide-left 1s forwards;
+    animation: slide-left 0.5s forwards;
 }
 
 @keyframes slide-left{
@@ -878,12 +902,12 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    top: 0;
 }
 
 .menu-page--slider-headings{
     text-align: center;
-    margin: 30px 0px;
-    padding-bottom: 100px;
+    padding: 10% 0;
 }
 
 .menu-page--slider-main-heading{
