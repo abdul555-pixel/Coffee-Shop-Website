@@ -155,12 +155,19 @@ const navappear = () => {
         return;
     }
 
-    if (window.scrollY > navHeight) {
-        // Add the 'scrolled' class when the user scrolls past the threshold
-        navBar.classList.add('scrolled');
-        navLogo.classList.add('shrink');
+    // Check if the screen width is greater than 680px
+    if (window.innerWidth > 680) {
+        if (window.scrollY > navHeight) {
+            // Add the 'scrolled' class when the user scrolls past the threshold
+            navBar.classList.add('scrolled');
+            navLogo.classList.add('shrink');
+        } else {
+            // Remove the 'scrolled' class when at the top
+            navBar.classList.remove('scrolled');
+            navLogo.classList.remove('shrink');
+        }
     } else {
-        // Remove the 'scrolled' class when at the top
+        // If screen width is less than or equal to 680px, reset the navbar styles
         navBar.classList.remove('scrolled');
         navLogo.classList.remove('shrink');
     }
